@@ -19,18 +19,43 @@
                 <label for="attractie">Naam attractie:</label>
                 <input type="text" name="attractie" id="attractie" class="form-input">
             </div>
+
             <div class="form-group">
                 <label for="type">Type</label>
-                <!-- hier komt een dropdown -->
+                <select name="type" id="type">
+                    <option value=""> -kies een type - <option>
+                    <option value="A">achtbaan</option>
+                    <option value="B">draaiend</option>
+                    <option value="C">kinder</option>
+                    <option value="D">horeca</option>
+                    <option value="E">show</option>
+                    <option value="F">water</option>
+                    <option value="G">overig</option>
+                </select>
             </div>
+
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
                 <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
             </div>
+
+            <div class="form-group">
+                <label for="prioriteit">prioriteit</label>
+                <input type="checkbox" id="prioriteit" name="prioriteit">
+                <label for="prioriteit">Melding met prioriteit</label>
+            </div>
+
             <div class="form-group">
                 <label for="melder">Naam melder:</label>
                 <input type="text" name="melder" id="melder" class="form-input">
             </div>
+
+            <div class="form-group">
+                <label for="overig">overige info</label>
+                <textarea name="overig" id="overig" class="form-input" rows="4"></textarea>
+            </div>
+
+            
             
             <input type="submit" value="Verstuur melding">
 
